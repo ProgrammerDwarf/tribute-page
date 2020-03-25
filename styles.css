@@ -1,0 +1,220 @@
+html, html *, * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.g-container{
+    display: flex;
+    flex-direction: column;
+}
+
+                    /*Header layouts*/
+header {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #353535;
+    justify-content: space-evenly;
+    background-image: url(images/johnavonportrait.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.menu-container {
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: column;
+}
+.menu-nav {
+    flex: 1 1 50%; 
+}
+.menu{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-around;
+}
+.menu li{
+    font-size: 2.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+    font-weight: normal;
+    color: whitesmoke;
+    margin-top: 2.5%;
+}
+.menu li:hover {
+    transition-duration: 0.5s;
+    color: #8f511a;
+}
+.menu li a{
+    text-decoration: none;
+    color: inherit
+}
+.title-box {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.title-box h1{
+    font-size: 9em;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: -14%;
+    position: absolute;
+    top:25%;
+    left: 10%;
+    z-index: 10;
+    color:#8f511a;
+}
+.title-box p{
+    font-size: 4em;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 100;
+    color: grey;
+    position: absolute;
+    top:45%;
+    left: 5%;
+}
+.title-box p:last-child{
+    color: rgba(0, 0, 0,0.2);
+    left: 5%;
+    top: 20%;
+    position: absolute;
+    font-size: 4em;
+    z-index: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;}
+
+/* .img-div img {
+    max-width: 100%;
+    height: auto; */
+
+
+                /*    TRIBUTE INFO LAYOUT STYLES    */
+
+.tribute{
+    max-width: 100%;
+    line-height: 1.5em;
+    height: 100vh;
+    display: flex;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.tribute div {
+    flex: 1 1 33%;
+    padding: 1em;
+    
+
+}
+.tribute div h4 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #8f511a;
+
+}
+.tribute div:first-child,.tribute div:first-child h4 {
+    background-color: #353535;
+    color: whitesmoke;
+}
+
+                  /* GALLERY LAYOUT STYLES   */
+                
+.gallery-container{
+    width: 100%;
+    background-color: #353535;
+    display: flex;
+    justify-content: center;
+
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;}
+    
+.gallery h4 {
+    font-size: 4em;
+    font-weight: lighter;
+    color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 1em;
+}
+
+.gallery img {
+    flex: auto;
+    height: 250px;
+    min-width: 150px;
+    margin: 0 0.2em 0.2em 0; /* Some gutter */
+    border-radius: 15px;
+}
+.gallery img:nth-child(2n+1) {
+    width: 250px;
+  }
+  .gallery img:nth-child(1n+1):nth-child(2n+2) {
+    width: 325px;
+  }
+  .gallery img:nth-child(1n+1):nth-child(2n+3) {
+    width: 180px;
+  }
+  .gallery img:nth-child(1n+1):nth-child(2n+4) {
+    width: 380px;
+  }
+  .gallery-images{
+      translate: 4em;
+      padding: 1.5em 0 1.5em 0;
+  }
+  .contact-container {
+      display: flex;
+      justify-content: center;
+      margin: 2em 0;
+  }
+  .contact-box {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      translate: 55px;
+  }
+  .contact-box  p {
+      font-size: 1.5em;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      flex: auto;
+      margin-left: 2em;
+      margin-right: 2em ;
+  }
+  .image-contact{
+      width: 350px;
+      display: block;
+      margin: 2em 2em 0;
+      flex: auto;
+  }
+  .image-contact img {
+     border-radius: 100%;
+     height: auto;
+     width: 100%;
+  }
+
+  footer{
+      background-color: #353535;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  footer p {
+      margin: 0.5em 0 ;
+  }
+  footer p:first-child {
+      font-size: 2em;
+      text-transform: uppercase;
+  }
+  footer a:visited {
+      color: #8f511a;
+  }
