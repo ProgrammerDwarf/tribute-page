@@ -285,7 +285,7 @@ margin-bottom: 2em;
     
     } 
 }
-@media screen and (min-width: 541px) and (max-width: 766px){
+@media screen and (min-width: 541px) and (max-width: 767px){
     .menu-hero {
         width: 100vw;
         height: 100%;
@@ -313,7 +313,7 @@ margin-bottom: 2em;
         content: '\25BE';
     }
     .john-portrait img {
-        height: 50vh;
+        height: 93vh;
         z-index: var(--z-back);
     }
     /* BIO SECTION */
@@ -338,11 +338,6 @@ margin-bottom: 2em;
     .menu-hero h1 {
         font-size: 3em;
     }
-    .john-portrait h2::after {
-        display: block;
-        margin-top: 5%;
-        content: '\25BE';
-    }
     /* HERO IMG AND TITLE SECTION */
     .john-portrait {
         display: grid;
@@ -363,8 +358,13 @@ margin-bottom: 2em;
         text-align: center;
         z-index: var(--z-over);
     }
+    .john-portrait h2::after {
+        display: block;
+        margin-top: 5%;
+        content: '\25BE';
+    }
     .john-portrait img {
-        height: 50vh;
+        height: 93vh;
         z-index: var(--z-back);
     }
     /* BIO SECTION */
@@ -383,6 +383,10 @@ margin-bottom: 2em;
     body{
         font-size: 20px;
     }
+    .john-portrait img {
+        height: 91vh;
+        z-index: var(--z-back);
+    }
 }
 
                 /* desktop styles */
@@ -395,8 +399,22 @@ margin-bottom: 2em;
         width: 100vw;
         position: relative;
     }
+    .menu-hero h1{ 
+     margin: 20% 20% 0;
+     font-size: 6em;
+     white-space: pre-wrap;
+     letter-spacing: 25px;
+     text-transform: uppercase;
+     color: var(--secundary);
+     text-shadow: 1px 5px 1px rgb(37, 37, 37);
+    }
     .menu-hero img{
-        width: 100vh;
+        width: 89vh;
         height: auto;
+        margin: 0 -50% 0 0;
+   }
+    .menu-hero h2{
+        /* margin: 0 5% 12% 0; */
+        display: none;
     }
 }
