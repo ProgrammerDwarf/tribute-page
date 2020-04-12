@@ -92,13 +92,13 @@ header{
     grid-row: 1;
     color:  rgba(228, 115, 15, 0.45);
     align-self: end;
-    writing-mode: sideways-lr;
-    text-orientation: sideways-right;
+    text-align: center;
+    mix-blend-mode: difference;
+    opacity: 1;
     height: 1em;
     font-size: 4em;
-    margin-bottom: 1%;
     line-height: 0.8em;
-    margin-left: -2px;
+    font-size: 3em;
 }
 /* biography section */
 
@@ -301,7 +301,6 @@ margin-bottom: 2em;
     .bio-container h4 {
         z-index: 100;
     }
-
     /* GALLERY SECTION */
     .img-box{
         width: 50%;
