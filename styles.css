@@ -161,7 +161,8 @@ margin-bottom: 2em;
 .gallery-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr)  ;
-    gap: 10px;
+    gap: 1rem;
+    padding: 1rem;
 }
 .gallery-container h3{
     position: relative;
